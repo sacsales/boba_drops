@@ -2,9 +2,163 @@ img {
     width: 200px;
 }
 
-body {
-    font-family: 'verdana';
-    background-color: cornflowerblue;
-    color: White;
+html {
+  font-family: 'Rubik', sans-serif;
 }
 
+* {
+  padding: 0
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #0b2530;
+    background: linear-gradient(155deg, rgba(11, 37, 48, 1) 0%, rgba(93, 54, 133, 1) 33%, rgb(56, 51, 62) 65%, rgba(41, 15, 77, 1) 100%);
+    color: White;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.now-playing {
+  padding: auto;
+  background-color: rgba(31, 27, 27, 0.829);
+  border-radius: 14px;
+  text-align: center;
+  
+}
+.main-title {
+  letter-spacing: 3px;
+}
+
+
+footer {
+  background-color: rgb(41, 38, 38);
+  text-align: center;
+}
+
+.footer-text{
+  padding: 15px;
+}
+
+.header {
+  background-color: #0b2530;
+  height: 10fr;
+}
+
+
+
+
+
+
+
+.spacer {
+  flex-grow: 1; 
+  opacity: 0;
+}
+
+
+.project-grid-wrapper {
+  display: grid;
+  grid-template-columns: 100fr 100fr ;
+  grid-template-rows: 50fr 50fr;
+  gap: 10px;
+}
+
+.project-obj {
+  background-color: gray;
+  border-radius: 14px;
+  padding: auto;
+}
+
+.project-text {
+  padding-left: 15px;
+}
+
+.project-image {
+  border-radius: 14px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.side-tab {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  
+}
+
+.profile-tab {
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-content: flex-end;
+  
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5fr 15fr 50fr;
+    gap: 15px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+.side-content{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 80fr;
+  width: 80fr;
+  animation: spin 4s linear infinite;
+}
+
+img.pfp {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 80fr;
+  width: 80fr;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-overlay {
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  
+  
+  background-color: rgb(16, 11, 11); 
+  border: 3px solid #581616;
+  
+}
